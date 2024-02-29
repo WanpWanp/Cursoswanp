@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="./magica.css">
+        <title>mágica</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1>Mágica de somar 5 milhares</h1>
+
+            <div class="conteudos">
+
+                <div class="parte1">
+                    <label class="">Insira uma milhar</label>
+                    <input type="number" name="inputnum1" class="inputUser"  id="num1" minlength="4" maxlength="4" min="0000" max="9999" placeholder="0000" value="0000">
+                </div>
+
+                <div class="btn-previa">
+                    <button id="vPrevia" onclick="mostarPrevia()" onmouseout="toWriteText(this);">Resultado final</button>
+                </div>
+
+                <div class="parte2">
+                    <label class="">Insira uma milhar</label>
+                    <input type="number" name="inputnum2"  class="inputUser"  id="num2" minlength="4" maxlength="4" min="0000" max="9999" placeholder="0000" value="0" >
+                </div>
+
+                <div class="parte2">
+                    <label class="">Milhar automática</label>
+                    <input type="number" name="inputnum3"  class="" id="num3" minlength="4" maxlength="4" min="0000" max="9999" placeholder="0000" value="0">
+                </div>
+
+                <div class="parte2">
+                    <label class="">Insira uma milhar</label>
+                    <input type="number" name="inputnum4"  class="inputUser"  id="num4" minlength="4" maxlength="4" min="0000" max="9999" placeholder="0000" value="0">
+                </div>
+
+                <div class="parte2">
+                    <label class="">Milhar automática</label>
+                    <input type="number" name="inputnum5" class="" id="num5" minlength="4" maxlength="4" min="0000" max="9999" placeholder="0000" value="0">
+                </div>
+                <div class="teste">
+                    <label class="">Input rato de lab</label>
+                    <input>
+                </div>
+                
+
+            </div>
+            <div class="btn-soma">
+                <button class="" onclick="somar()" id="soma">Somar</button>
+            </div>
+            <span id="resultado"></span>
+        </div>
+
+        <script src="./scriptmagica.js"></script>
+        <script src="./ratolab.js"></script>
+ </html>

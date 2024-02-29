@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="">
+        <title>Curso JS></title>
+    </head>
+    <body>
+        <h1>Seção 04</h1>
+        
+    </body>
+
+    <script>
+        var enterpriseName = "TecGuilty";
+        var nameSenior = "Willian";
+
+        var colabs = ["Ana", "Willian", "Théo"];
+        var colab = {
+            nome: "Juca",
+            idade: 17,
+            função: "Menor aprendiz",
+            ativo: true
+        };
+
+        console.log(nameSenior);
+        console.log(enterpriseName);
+        console.log(colabs);
+        console.log(colab);
+        console.log(colab.função);
+    </script>
+
+    <script>
+        var title = document.getElementsByTagName("h1");
+        var age = 15;
+        function showDisplay (){
+            if(title[0] != "TecGuilty" && age >= 18) {
+            title[0].innerHTML = `TecGuilty e o dev é maior de idade: ${age} anos.`;
+            console.log(`Maior de idade: ${age}`);
+            } else {
+            title[0].innerHTML = `Curso de JavaScrip e o dev é menor de idade: ${age} anos.`;
+            
+            console.log(`Menor de idade: ${age}`);
+            }
+        }
+        setInterval(showDisplay, 90000);
+        setTimeout(showDisplay, 1000);
+
+        var sex = "F"
+        switch(sex) {
+            case "M":
+                console.log(`O seu sexo é: ${sex}`);
+            break;
+            case "F":
+            console.log(`O seu sexo é: ${sex}`);
+            break;
+            default:
+            console.log(`Isso é uma bichona`);
+        }
+        
+    </script>
+
+    <script>
+        for(var i = 0; i <= 10; i++) {
+            console.log("i = " + i)
+        }
+        
+        console.log(`O valor final de i é: ${i}`)
+
+        var num = 0;
+        while(num <= 15) {
+            console.log(`Num = ${num}`);
+            num++;
+        }
+
+        var mult = 2;
+        for(var cador = 0;cador <=10; cador++ ) {
+            console.log(`${cador} * ${mult} = ${cador * mult}`)
+        }
+
+        console.log(`O valor final de num é: ${num}`)
+
+        var cont = 0;
+         do {
+            console.log(`valor de cont = ${cont}`);
+            cont++;
+         } while(cont <= 5);
+
+         console.log(`O valor final de cont é: ${cont}`)
+        
+    </script>
+
+    <script>
+        var course = "JavaScript";
+        var good = true;
+        if(course == "JavaScript" && good == true) {
+            console.log(`1° O curso é de JavaScript e legal`);
+        } else {
+            console.log(`1° O curso não é de JavaScrip ou não é legal`);
+        }
+        if(course == "JavaScript" || good == false) {
+            console.log(`2° O curso é de JavaScript ou legal`);
+        } else {
+            console.log(`2° O curso não é de JavaScrip e não é legal`);
+        }
+        if(course != "Javacript" && good != false) {
+            console.log(`3° O curso é de JavaScript e legal!`);
+        } else {
+            console.log(`3° O curso não é de JavaScrip ou não é legal!`);
+        }
+        if(course != "JavaScript" || good != true) {
+            console.log(`4° O curso é de JavaScript e legal!`);
+        } else {
+            console.log(`4° O curso não é de JavaScrip ou não é legal!`);
+        }
+    </script>
+
+    <script>
+         function add(num1,num2) {
+            var res = num1 + num2;
+            return res;
+         };
+
+         console.log(add(5,25));
+
+         function mensage() {
+            console.log("Olá mundo!");
+         };
+
+         mensage();
+         
+    </script>
+
+    <script>
+
+        function add(num3, num4) {
+            var value = 5;
+            return num3 * value + num4
+        }
+
+        console.log(add(4,6));
+
+        //console.log(valor);
+    </script>
+ </html>

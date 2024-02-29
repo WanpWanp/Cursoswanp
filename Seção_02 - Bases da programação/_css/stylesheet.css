@@ -1,0 +1,10 @@
+p {
+    font-weight: bold;
+}
+#testeP {
+    text-decoration: underline ;
+    color: red;
+}
+.testPA {
+    color: red;
+}

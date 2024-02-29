@@ -1,0 +1,9 @@
+*.docx
+*.txt
+*.ppt
+*.pdf
+*.zip
+*.json
+.vscode/
+bootstrap/
+node_modules/
